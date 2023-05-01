@@ -20,15 +20,25 @@
 //     item[i].style.fontWeight='bold'
 // }
 
-var licn = document.getElementsByClassName("list-group-item")
-for(let k=0; k<licn.length; k++)
-{
-    licn[k].style.backgroundColor='lightblue'
-}
+// var licn = document.getElementsByClassName("list-group-item")
+// for(let k=0; k<licn.length; k++)
+// {
+//     licn[k].style.backgroundColor='lightblue'
+// }
 
-var tn = document.getElementsByTagName('li')
-console.log(tn)
-for(let k=0; k<tn.length; k++)
+// var tn = document.getElementsByTagName('li')
+// console.log(tn)
+// for(let k=0; k<tn.length; k++)
+// {
+//     tn[k].style.fontWeight='bold'
+// }
+
+var i2 = document.querySelectorAll('.list-group-item');
+i2[1].style.backgroundColor='green'
+i2[2].innerText=''
+
+var o = document.querySelectorAll('li:nth-child(odd)');
+for(let k=0; k<o.length;k++ )
 {
-    tn[k].style.fontWeight='bold'
+    o[k].style.backgroundColor='#90EE90';
 }
