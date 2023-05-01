@@ -17,9 +17,18 @@ function addItem(e)
     deleteBtn.appendChild(document.createTextNode('X'));
     
 
+    var editBtn = document.createElement('button');
+    editBtn.className="btn btn-success" 
+    editBtn.style.float='right'
+    editBtn.appendChild(document.createTextNode('Edit'))
+    //editBtn.style.backgroundColor='green'
+    
+   
+
     li.appendChild(document.createTextNode(newItem));
     
     itemList.appendChild(li);
+    li.appendChild(editBtn)
     li.appendChild(deleteBtn)
 }
 
